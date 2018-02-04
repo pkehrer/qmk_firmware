@@ -178,19 +178,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 void matrix_scan_user(void) {
   uint8_t layer = biton32(layer_state);
-
-  if (old_layer != layer) {
-    switch (layer) {
-      case _DEFAULT:
-      case _FN:
-        backlight_set(1);
-      break;
-      case _VIM:
-      case _VIM_SHIFT:
-      case _VIM_CONTROL:
-        backlight_set(4);
-      break;
-    }
-    old_layer = layer;
-  }
+  send_key(KC_A);
+  send_keyboard_report();
+  return true;
 };
