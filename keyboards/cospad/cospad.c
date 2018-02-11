@@ -8,8 +8,9 @@ extern inline void cospad_bl_led_togg(void);
 void matrix_init_kb(void) {
 	// put your keyboard start-up code here
 	// runs once when the firmware starts up
-	matrix_init_user();
-	led_init_ports();
+		led_init_ports();
+    matrix_init_user();
+
 };
 
 void matrix_scan_kb(void) {
@@ -27,11 +28,11 @@ void led_init_ports(void) {
 }
 
 void led_set_kb(uint8_t usb_led) {
-    if (usb_led & (1<<USB_LED_NUM_LOCK)) {
-        // Turn numlock on
-        PORTB &= ~(1<<2);
-    } else {
-        // Turn numlock off
-        PORTB |= (1<<2);
-    }    
+    // if (usb_led & (1<<USB_LED_NUM_LOCK)) {
+    //     // Turn numlock on
+    //     PORTB &= ~(1<<2);
+    // } else {
+    //     // Turn numlock off
+    //     PORTB |= (1<<2);
+    // }
 }
