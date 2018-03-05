@@ -50,9 +50,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCING_DELAY 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-//#define LOCKING_SUPPORT_ENABLE
+#define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-//#define LOCKING_RESYNC_ENABLE
+#define LOCKING_RESYNC_ENABLE
 
 /* key combination for command */
 #define IS_COMMAND() ( \
@@ -61,15 +61,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Backlight configuration
  */
+#define BACKLIGHT_LEVELS 4
 
 /* Underlight configuration
+ */
+
 #define RGB_DI_PIN E2
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 8     // Number of LEDs
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
-*/
 
 /*
  * Feature disable options

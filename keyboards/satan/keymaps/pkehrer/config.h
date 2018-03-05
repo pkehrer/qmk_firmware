@@ -1,5 +1,5 @@
 /*
-Copyright 2012 Jun Wako <wakojun@gmail.com>
+Copyright 2017 Paul Kehrer
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -15,20 +15,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef CONFIG_PKEHRER
-#define CONFIG_PKEHRER
+#ifndef CONFIG_USER_H
+#define CONFIG_USER_H
 
 #include "config_common.h"
-#include "../../config.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0003
-#define MANUFACTURER    SATAN
-#define PRODUCT         GH60
-#define DESCRIPTION     QMK keyboard firmware for Satan GH60 with WS2812 support
+#undef MANUFACTURER
+#define MANUFACTURER    Paul Kehrer
+#undef DESCRIPTION
+#define DESCRIPTION     Badass GH60 keyboard
 
+#undef BACKLIGHT_LEVELS
 #define BACKLIGHT_LEVELS 5
 #define BACKLIGHT_BREATHING
 #define BREATHING_PERIOD 1
@@ -40,23 +38,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_TIME_TO_MAX    45
 #define MOUSEKEY_MAX_SPEED      3
 #define MOUSEKEY_WHEEL_DELAY 	0
-
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
-
-/* disable debug print */
-//#define NO_DEBUG
-
-/* disable print */
-//#define NO_PRINT
-
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
 
 #endif
