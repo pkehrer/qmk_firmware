@@ -1,6 +1,6 @@
 # pkehrerpad
 
-![pkehrerpad](https://i.imgur.com/cea1iKw.jpg =200x200)
+<img src="https://i.imgur.com/cea1iKw.jpg" width="250px"/>
 
 This is a stop on my journey towards a full hand-wired custom layout keyboard. This layout was used
 to test simple grids of keys wired to a pro-micro
