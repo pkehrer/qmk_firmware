@@ -1,4 +1,4 @@
-/* Copyright 2017 REPLACE_WITH_YOUR_NAME
+/* Copyright 2017 Paul Kehrer
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,41 +32,9 @@ void matrix_scan_user(void) {
 
 }
 
-void pk_send_word(uint16_t keycode) {
-    switch(keycode) {
-      case KC_1:
-        send_string("Paul ");
-        break;
-      case KC_2:
-        send_string("Kehrer ");
-        break;
-      case KC_3:
-        send_string("makes ");
-        break;
-      case KC_4:
-        send_string("the ");
-        break;
-      case KC_5:
-        send_string("best ");
-        break;
-      case KC_6:
-        send_string("keyboards ");
-        break;
-      case KC_7:
-        send_string("in ");
-        break;
-      case KC_8:
-        send_string("the ");
-        break;
-      case KC_9:
-        send_string("world ");
-        break;
-    }
-}
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (!record->event.pressed) {
-    //pk_send_word(keycode);
+    // something fun here?
   }
   return true;
 }
