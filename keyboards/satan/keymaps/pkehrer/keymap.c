@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   MO(_RL), KC_F1,KC_F2,KC_F3 ,KC_F4 ,KC_F5 ,KC_F6 ,KC_F7 ,KC_F8,KC_F9,KC_F10,KC_F11 ,KC_F12,KC_DEL,  \
   _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,KC_PAUSE,KC_HOME, KC_END,_______, \
   _______,_______,PK_SNIPTOOL,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______, \
-  _______,_______,_______,KC_CALCULATOR,_______,_______,_______,_______,_______,_______,_______,KC_UP, \
+  _______,_______,_______,KC_CALC,_______,_______,_______,_______,KC_VOLD,KC_VOLU,_______,KC_UP, \
   _______,_______,_______,                _______,                        _______,KC_LEFT,KC_DOWN,KC_RIGHT),
 
 // "Admin"
@@ -91,11 +91,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         breathing_pulse();
       }
       return true;
-    case KC_CALCULATOR:
-      if(record->event.pressed) {
-        SEND_WIN_STRING("calculator");
-      }
-      return false;
     case PK_SNIPTOOL:
       if (record->event.pressed) {
         SEND_WIN_STRING("snipping tool");

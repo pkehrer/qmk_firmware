@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT         GH60
 #define DESCRIPTION     QMK keyboard firmware for Satan GH60 with WS2812 support
 
-#define BACKLIGHT_LEVELS 2
+#define BACKLIGHT_LEVELS 5
 #define BACKLIGHT_BREATHING
 #define BREATHING_PERIOD 1
 
