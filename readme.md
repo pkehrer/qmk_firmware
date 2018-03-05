@@ -3,8 +3,8 @@
 This includes all of the keyboard layouts that I've created for my personal use. None of them are worthy of merging back to the main qmk repo, but maybe someday?
 
 Here are links to the layouts that I've added:
+* [satan:pkehrer](keyboards/satan/keymaps/pkehrer)
 * [pkehrerpad:default](keyboards/pkehrerpad)
-
 
 
 ## Official QMK Info:
