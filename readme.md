@@ -3,8 +3,9 @@
 This includes all of the keyboard layouts that I've created for my personal use. None of them are worthy of merging back to the main qmk repo, but maybe someday?
 
 Here are links to the layouts that I've added:
-* [satan:pkehrer](keyboards/satan/keymaps/pkehrer)
-* [pkehrerpad:default](keyboards/pkehrerpad)
+* [satan:pkehrer](keyboards/satan/keymaps/pkehrer) - my satan gh60 layout
+* [cospad:kkehrer](keyboards/cospad/keymaps/kkehrer) - my wife's cospad layout
+* [pkehrerpad:default](keyboards/pkehrerpad) - messing around with hand-wiring...
 
 
 ## Official QMK Info:
