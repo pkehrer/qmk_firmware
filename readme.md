@@ -1,5 +1,13 @@
-# Quantum Mechanical Keyboard Firmware
+# Paul Kehrer's Fork of Quantum Mechanical Keyboard Firmware
 
+This includes all of the keyboard layouts that I've created for my personal use. None of them are worthy of merging back to the main qmk repo, but maybe someday?
+
+Here are links to the layouts that I've added:
+* [pkehrerpad:default](keyboards/pkehrerpad)
+
+
+
+## Official QMK Info:
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Build Status](https://travis-ci.org/qmk/qmk_firmware.svg?branch=master)](https://travis-ci.org/qmk/qmk_firmware)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
