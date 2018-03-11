@@ -16,12 +16,23 @@
 #include "pkehrerpad.h"
 
 #define BASE_LAYER 0
+#define FN_LAYER 1
+
+#define _______ KC_TRNS
+#define XXXXXXX KC_NO
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE_LAYER] = KEYMAP(
-    KC_4, KC_5, KC_6, \
-    KC_1, KC_2, KC_3  \
-  )
+    KC_ESC, KC_1, KC_2, KC_3, KC_4, \
+    KC_TAB, KC_Q, KC_W, KC_E, KC_R, \
+    KC_LSHIFT, KC_A, KC_S, KC_D, KC_F, \
+    KC_SPACE,       KC_Z,       LT(FN_LAYER, KC_B)),
+
+  [FN_LAYER] = KEYMAP(
+    _______, _______, _______, _______, RESET, \
+    _______, _______, _______, _______, _______, \
+    _______, _______, _______, _______, _______, \
+    _______,          _______,          _______),
 };
 
 void matrix_init_user(void) {
